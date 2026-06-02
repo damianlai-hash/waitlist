@@ -36,13 +36,13 @@ export default function CommandCentrePage() {
               <h2 className="text-lg font-extrabold text-ink">Revenue this week</h2>
               <span className="text-sm font-semibold text-leaf">£571 total</span>
             </div>
-            <div className="mt-6 flex h-48 items-end gap-3">
+            <div className="mt-6 flex items-end gap-3">
               {weekRevenue.map((v, i) => (
                 <div key={i} className="flex flex-1 flex-col items-center gap-2">
-                  <div className="flex w-full items-end justify-center" style={{ height: "100%" }}>
+                  <div className="flex h-44 w-full items-end">
                     <div
                       className="w-full rounded-t-lg transition-all"
-                      style={{ height: `${(v / max) * 100}%`, background: i === 5 ? "var(--primary)" : "rgba(255,107,91,.3)" }}
+                      style={{ height: `${(v / max) * 100}%`, background: i === 5 ? "var(--primary)" : "rgba(255,107,91,.35)" }}
                       title={`£${v}`}
                     />
                   </div>
