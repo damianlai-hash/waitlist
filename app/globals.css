@@ -120,6 +120,24 @@ body {
   }
 }
 
+/* Borderless select used inside the marketplace search bar */
+.market-select {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 0;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--text);
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+}
+.market-select option {
+  color: #0e1a2b;
+}
+
 /* Hide scrollbars on horizontally-scrolling mobile chip rows */
 .no-scrollbar {
   -ms-overflow-style: none;

@@ -203,6 +203,35 @@ export const Icon = {
       <path d="M12 2v20M16.5 6.5C16 5 14.3 4 12 4 9 4 7.5 5.5 7.5 7.5S9 11 12 11.5s4.5 1 4.5 3.5S15 19.5 12 19.5c-2.3 0-4-1-4.5-2.5" />
     </Base>
   ),
+  Star: (p: IconProps) => (
+    <Base {...p}>
+      <path d="M12 3.2l2.6 5.3 5.8.8-4.2 4.1 1 5.8L12 16.9l-5.2 2.1 1-5.8-4.2-4.1 5.8-.8L12 3.2Z" />
+    </Base>
+  ),
+  Check: (p: IconProps) => (
+    <Base {...p}>
+      <path d="m5 12.5 4.5 4.5L19 7" />
+    </Base>
+  ),
+  ArrowRight: (p: IconProps) => (
+    <Base {...p}>
+      <path d="M4 12h15M13 6l6 6-6 6" />
+    </Base>
+  ),
+  Sliders: (p: IconProps) => (
+    <Base {...p}>
+      <path d="M4 7h10M18 7h2M4 17h6M14 17h6M4 12h2M10 12h10" />
+      <circle cx="16" cy="7" r="2" />
+      <circle cx="12" cy="17" r="2" />
+      <circle cx="8" cy="12" r="2" />
+    </Base>
+  ),
+  Shield: (p: IconProps) => (
+    <Base {...p}>
+      <path d="M12 3l7 3v5c0 4.5-3 7.8-7 9-4-1.2-7-4.5-7-9V6l7-3Z" />
+      <path d="m9 12 2 2 4-4" />
+    </Base>
+  ),
 };
 
 export type IconKey = keyof typeof Icon;
