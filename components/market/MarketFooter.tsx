@@ -1,18 +1,13 @@
 import Link from "next/link";
-import { Icon } from "@/lib/icons";
 import { CATEGORIES, CITIES } from "@/lib/marketplace";
+import { BookzyrLogo } from "./Logo";
 
 export function MarketFooter() {
   return (
     <footer className="mt-16 border-t border-border bg-surface-2">
       <div className="mx-auto grid max-w-7xl gap-8 px-4 py-12 sm:px-6 md:grid-cols-4">
         <div>
-          <div className="flex items-center gap-2">
-            <span className="grid h-9 w-9 place-items-center rounded-xl text-white" style={{ background: "var(--primary)" }}>
-              <Icon.Scissors className="h-5 w-5" />
-            </span>
-            <span className="text-lg font-extrabold text-ink">Bookzyr</span>
-          </div>
+          <BookzyrLogo />
           <p className="mt-3 max-w-xs text-sm text-muted">
             The free way to book beauty &amp; wellness. Real-time availability from verified pros near you.
           </p>

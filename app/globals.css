@@ -15,9 +15,9 @@
   --border: #e8e2d7;
   --text: #0e1a2b;
   --text-muted: #6b7589;
-  --primary: #ff6b5b;
-  --primary-hover: #e8584a;
-  --ring: rgba(255, 107, 91, 0.35);
+  --primary: #c53a28;
+  --primary-hover: #a8311f;
+  --ring: rgba(197, 58, 40, 0.32);
 }
 
 .dark {
@@ -28,9 +28,9 @@
   --border: rgba(250, 246, 240, 0.1);
   --text: #faf6f0;
   --text-muted: #94a0b5;
-  --primary: #ff6b5b;
-  --primary-hover: #ff8b70;
-  --ring: rgba(255, 107, 91, 0.45);
+  --primary: #e0492f;
+  --primary-hover: #f15a3f;
+  --ring: rgba(224, 73, 47, 0.45);
 }
 
 * {
@@ -46,7 +46,7 @@ body {
 }
 
 ::selection {
-  background: rgba(255, 107, 91, 0.25);
+  background: rgba(197, 58, 40, 0.22);
 }
 
 /* Thin, brand-tinted scrollbars */

@@ -27,9 +27,9 @@ export function SearchBar({ variant = "hero" }: { variant?: "hero" | "compact" }
         compact ? "" : "rounded-2xl border border-border bg-surface p-2 shadow-pop sm:flex-row sm:items-center sm:rounded-full"
       } ${compact ? "sm:flex-row" : ""}`}
     >
-      <Cell icon={<Icon.Search className="h-5 w-5" />} label="Treatment" first>
-        <select className="market-select" value={treatment} onChange={(e) => setTreatment(e.target.value)} aria-label="Treatment">
-          <option value="">All treatments</option>
+      <Cell icon={<Icon.Search className="h-5 w-5" />} label="Treatment or business" first>
+        <select className="market-select" value={treatment} onChange={(e) => setTreatment(e.target.value)} aria-label="Treatment or business">
+          <option value="">All treatments, salons, or…</option>
           {CATEGORIES.map((c) => (
             <option key={c.key} value={c.key}>
               {c.label}
@@ -42,7 +42,7 @@ export function SearchBar({ variant = "hero" }: { variant?: "hero" | "compact" }
 
       <Cell icon={<Icon.Pin className="h-5 w-5" />} label="Location">
         <select className="market-select" value={city} onChange={(e) => setCity(e.target.value)} aria-label="Location">
-          <option value="">Anywhere</option>
+          <option value="">Suburb, city or state</option>
           {CITIES.map((c) => (
             <option key={c} value={c}>
               {c}

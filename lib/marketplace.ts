@@ -241,18 +241,25 @@ export const CITIES = ["Sydney", "Melbourne", "Brisbane", "Perth", "Adelaide", "
 export const WHEN_OPTIONS = ["Any time", "Today", "Tomorrow", "This week", "This month"];
 
 export const BENEFITS: { icon: "Clock" | "Shield" | "Dollar" | "Check"; title: string; body: string }[] = [
-  { icon: "Clock", title: "Real-time availability", body: "See open slots and book instantly — no phone calls, no waiting for a callback." },
-  { icon: "Shield", title: "Verified reviews only", body: "Every review comes from a real, completed booking. No fakes, ever." },
-  { icon: "Dollar", title: "Always free", body: "Booking through Bookzyr never costs you a cent. No hidden fees." },
-  { icon: "Check", title: "Free cancellation", body: "Plans change. Cancel free up to 24 hours before your appointment." },
+  { icon: "Clock", title: "Real-time availability", body: "See actual open slots — not requests." },
+  { icon: "Shield", title: "Verified reviews only", body: "Only customers who actually showed up can leave a review." },
+  { icon: "Dollar", title: "Free to use, always", body: "No booking fees, no surcharges." },
+  { icon: "Check", title: "Free cancellation", body: "Reschedule or cancel up to 24 hours before." },
 ];
 
 export const FAQS: { q: string; a: string }[] = [
-  { q: "How does Bookzyr work?", a: "Search by treatment, location and time, pick a venue, choose a service and an open slot, and confirm. You get instant confirmation — no phone tag." },
-  { q: "Does it cost anything to book?", a: "No. Booking through Bookzyr is completely free for customers. You only pay the venue for your service." },
-  { q: "Can I cancel or reschedule?", a: "Yes — you can cancel or reschedule free of charge up to 24 hours before your appointment, right from your bookings." },
-  { q: "Are the reviews real?", a: "Every review is tied to a completed booking, so you only ever see feedback from genuine customers." },
-  { q: "How do I list my business?", a: "Tap “List your business”, tell us about your venue and services, and you can start taking online bookings the same day." },
+  { q: "How does Bookzyr work?", a: "Search by treatment, location and time. Compare verified pros by price and rating, pick a real available slot, and get instant confirmation." },
+  { q: "Is Bookzyr free for customers?", a: "Yes — booking on Bookzyr is 100% free." },
+  { q: "How are reviews verified?", a: "Only customers who actually completed a booking through Bookzyr can leave a review." },
+  { q: "Where is Bookzyr?", a: "Bookzyr is Australia-wide." },
+  { q: "How do I list my salon, barbershop or spa?", a: "Tap “List your business” to set up your venue page in about 20 minutes." },
 ];
 
-export const MARKET_STATS = { venues: 501, rating: 4.84, reviews: 12480, pros: 501 };
+export const TESTIMONIALS: { quote: string; author: string }[] = [
+  { quote: "Booked a balayage in South Yarra in under a minute. Confirmed instantly, real prices, no awkward phone calls.", author: "Sarah L." },
+  { quote: "Found a same-day fade in Fitzroy at half price.", author: "Marcus H." },
+  { quote: "I use Bookzyr for everything — nails, lashes, massage.", author: "Emily A." },
+  { quote: "Booked a couples spa on a Sunday at 11pm — instant confirmation, no waiting.", author: "Jack B." },
+];
+
+export const MARKET_STATS = { venues: 501, rating: 4.84, reviews: 12480, pros: 501, bookingsThisMonth: 194633, secToBook: 48 };

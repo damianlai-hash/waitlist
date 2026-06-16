@@ -19,9 +19,9 @@ const config: Config = {
         ink: "var(--text)",
         muted: "var(--text-muted)",
         coral: {
-          DEFAULT: "#FF6B5B",
-          light: "#FF8B70",
-          dark: "#E8584A",
+          DEFAULT: "#C53A28",
+          light: "#E0492F",
+          dark: "#A8311F",
         },
         gold: "#E8B86A",
         leaf: "#6CC289",
