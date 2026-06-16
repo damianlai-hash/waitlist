@@ -9,7 +9,7 @@ import { BookzyrLogo } from "./Logo";
 const NAV = [
   { label: "Browse", href: "/browse" },
   { label: "Help", href: "/browse" },
-  { label: "For Business", href: "/command-centre" },
+  { label: "For Business", href: "/biz" },
 ];
 
 export function MarketHeader() {
@@ -30,7 +30,7 @@ export function MarketHeader() {
         </nav>
 
         <div className="ml-auto flex items-center gap-2">
-          <Link href="/command-centre" className="hidden text-sm font-semibold text-muted hover:text-ink md:inline-flex md:px-2 md:py-2">
+          <Link href="/biz" className="hidden text-sm font-semibold text-muted hover:text-ink md:inline-flex md:px-2 md:py-2">
             List your business
           </Link>
           <Link href="/browse" className="btn-primary">
@@ -47,7 +47,7 @@ export function MarketHeader() {
 
       {open && (
         <div className="border-t border-border bg-surface px-4 py-2 md:hidden">
-          {[...NAV, { label: "List your business", href: "/command-centre" }].map((n) => (
+          {[...NAV, { label: "List your business", href: "/biz" }].map((n) => (
             <Link key={n.label} href={n.href} onClick={() => setOpen(false)} className="block rounded-lg px-3 py-2.5 text-sm font-semibold text-ink hover:bg-surface-2">
               {n.label}
             </Link>

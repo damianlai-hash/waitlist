@@ -163,7 +163,7 @@ export default function MarketplaceHome() {
               Join {MARKET_STATS.pros}+ pros taking online bookings on Bookzyr. Fill your chair, cut no-shows, and get paid — set up in about 20 minutes.
             </p>
             <div className="mt-6 flex flex-col justify-center gap-3 sm:flex-row">
-              <Link href="/command-centre" className="btn mx-auto bg-white px-6 py-3 text-base font-bold text-coral hover:bg-white/90 sm:mx-0">
+              <Link href="/biz" className="btn mx-auto bg-white px-6 py-3 text-base font-bold text-coral hover:bg-white/90 sm:mx-0">
                 List your business
               </Link>
               <Link href="/command-centre" className="btn mx-auto border border-white/40 px-6 py-3 text-base font-bold text-white hover:bg-white/10 sm:mx-0">
