@@ -1,0 +1,148 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ----------------------------------------------------------------------------
+   Bookzyr brand theme tokens
+   Light = the warm cream brand from www.bookzyr.com (default)
+   Dark  = navy variant for the admin "night" mode (sun/moon toggle)
+---------------------------------------------------------------------------- */
+:root {
+  --bg: #fcfaf6;
+  --surface: #ffffff;
+  --surface-2: #faf6f0;
+  --surface-3: #f4eee4;
+  --border: #e8e2d7;
+  --text: #0e1a2b;
+  --text-muted: #6b7589;
+  --primary: #c53a28;
+  --primary-hover: #a8311f;
+  --ring: rgba(197, 58, 40, 0.32);
+}
+
+.dark {
+  --bg: #0e1a2b;
+  --surface: #16243b;
+  --surface-2: #1a2942;
+  --surface-3: #233350;
+  --border: rgba(250, 246, 240, 0.1);
+  --text: #faf6f0;
+  --text-muted: #94a0b5;
+  --primary: #e0492f;
+  --primary-hover: #f15a3f;
+  --ring: rgba(224, 73, 47, 0.45);
+}
+
+* {
+  border-color: var(--border);
+}
+
+html,
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: rgba(197, 58, 40, 0.22);
+}
+
+/* Thin, brand-tinted scrollbars */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 999px;
+  border: 2px solid var(--bg);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}
+
+@layer components {
+  .display-title {
+    @apply font-display font-extrabold uppercase tracking-tight;
+    letter-spacing: -0.02em;
+  }
+
+  .card {
+    @apply rounded-2xl border border-border bg-surface shadow-card;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-3.5 py-2 text-sm font-semibold transition-colors;
+  }
+  .btn-primary {
+    @apply btn text-white;
+    background-color: var(--primary);
+  }
+  .btn-primary:hover {
+    background-color: var(--primary-hover);
+  }
+  .btn-ghost {
+    @apply btn border border-border bg-surface text-ink hover:bg-surface-2;
+  }
+  .btn-soft {
+    @apply btn bg-surface-2 text-ink hover:bg-surface-3;
+  }
+
+  .chip {
+    @apply inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-xs font-semibold;
+  }
+
+  .input {
+    @apply w-full rounded-xl border border-border bg-surface px-3.5 py-2.5 text-sm text-ink placeholder:text-muted outline-none transition;
+  }
+  .input:focus {
+    box-shadow: 0 0 0 4px var(--ring);
+    border-color: var(--primary);
+  }
+
+  .nav-link {
+    @apply flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm font-medium text-muted transition-colors;
+  }
+  .nav-link:hover {
+    @apply bg-surface-2 text-ink;
+  }
+  .nav-link[data-active="true"] {
+    color: #fff;
+    background-color: var(--primary);
+  }
+  .nav-link[data-active="true"] svg {
+    color: #fff;
+  }
+}
+
+/* Borderless select used inside the marketplace search bar */
+.market-select {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 0;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--text);
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+}
+.market-select option {
+  color: #0e1a2b;
+}
+
+/* Hide scrollbars on horizontally-scrolling mobile chip rows */
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
